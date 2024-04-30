@@ -13,7 +13,7 @@ public class TodoModel {
         // Establishing JDBC connection
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_db", "root", "Chirag@123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_db", "username", "password");
 
             // Creating table if not exists
             Statement statement = connection.createStatement();
